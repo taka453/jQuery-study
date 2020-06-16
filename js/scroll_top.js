@@ -19,13 +19,13 @@ $(function () {
     // もし現在のスクロール位置が30を超えていたらトップへ戻るボタンのエレメントをfadeInで表示
     // 30を超えていない場合はfadeOutで非表示
     // if文で記入
-    // if(windowScrolltop > 30) {
-    //   scrollTop.fadeIn(scrollSpeed);
-    // } else {
-    //   scrollTop.fadeOut(scrollSpeed);
-    // }
+    if(windowScrolltop > 30) {
+      scrollTop.fadeIn(scrollSpeed);
+    } else {
+      scrollTop.fadeOut(scrollSpeed);
+    }
 
     // 三項演算子(condition[条件] ? exprIfTrue[true] : exprIfFalse[false]);
-    windowScrolltop > 30 ? scrollTop.fadeIn(scrollSpeed) : scrollTop.fadeOut(scrollSpeed);
+    // windowScrolltop > 30 ? scrollTop.fadeIn(scrollSpeed) : scrollTop.fadeOut(scrollSpeed);
   });
 });
