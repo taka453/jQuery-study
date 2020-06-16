@@ -31,7 +31,7 @@ $(function () {
     // 選択を解除
     option.prop('selected', false);
     // 未選択のセレクトボックスに移動
-    $noneSelected.children('option');
+    $noneSelected.append(option);
   });
 
   // 左に全て移動
@@ -39,6 +39,6 @@ $(function () {
     // 全てのoptionを取得
     const option = $('#selected-items option');
     // 未選択のセレクトボックスに移動
-    $noneSelected.children('option');
+    $noneSelected.append(option);
   });
 });
