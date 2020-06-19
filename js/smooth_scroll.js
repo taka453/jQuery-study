@@ -13,7 +13,7 @@ $(function () {
     // 移動先を数値で取得(エレメントの上端の位置を取得)
     const top = $link.offset().top;
     // 固定のヘッダの高さを取得(隙間を一文字分足しておく)
-    const offset = $('.navbar').outerHeight()+68;
+    const offset = $('.navbar').outerHeight()+32;
     // スムーススクロールを実行
     $('html, body').animate({scrollTop : top - offset}, scrollSpeed, 'swing');
   });
