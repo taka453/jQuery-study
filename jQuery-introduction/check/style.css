@@ -1,0 +1,126 @@
+body {
+    font-size: 16px;
+}
+
+#qArea {
+    overflow: hidden;
+    width: 700px;
+    height: 500px;
+    background: url(images/back.jpg) no-repeat 0 0;
+}
+
+#qContainer {
+    margin: 115px 0 0 50px;
+    width: 4100px;
+    position: relative;
+}
+
+.qBox {
+    width: 600px;
+    margin: 0 50px 0 0;
+    height: 350px;
+    float: left;
+}
+
+.ques {
+    padding: 35px 0 0 25px;
+    width: 575px;
+    height: 45px;
+    _width: 600px;
+    _height: 80px;
+    background: url(images/quesArea.png) no-repeat 0 0;
+}
+
+.qNum {
+    color: #3366FF;
+}
+
+.fig {
+    width: 240px;
+    height: 260px;
+    margin: 0 4px 0 0;
+    float: right;
+}
+
+ul {
+    list-style: none;
+    margin: 0 0 0 2px;
+    padding: 0;
+    float: left;
+}
+
+ul li {
+    padding: 17px 0 0 60px;
+    background: url(images/checkButton.png) no-repeat 0 0;
+    width: 290px;
+    height: 33px;
+    _width: 350px;
+    _height: 50px;
+    cursor: pointer;
+    color: #333;
+}
+
+ul li.selected {
+    background-position: 0px -100px;
+    cursor: default;
+}
+
+ul li:hover {
+    background-position: 0 -50px;
+}
+
+#resultBox {
+    width: 600px;
+    margin: 0;
+    height: 350px;
+    background: url(images/resultBase.png) no-repeat 0 0;
+}
+
+#resultTitle {
+    margin: 44px 0 0 20px;
+    width: 400px;
+    float: left;
+    font-size: 18px;
+    height: 18px;
+}
+
+#resultPoint {
+    margin: 22px 40px 0 0;
+    float: right;
+    color: #f00;
+    font-size: 40px;
+    text-align: right;
+}
+
+#resultLeft {
+    float: left;
+    margin: 20px 0 0 20px;
+}
+
+#resultText {
+    width: 290px;
+    height: 180px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #666;
+}
+
+#resultImage {
+    width: 252px;
+    height: 217px;
+    float: right;
+    margin: 15px 20px 0 0;
+    background: url(images/lv4.png) no-repeat 0 0;
+}
+
+#againButton {
+    margin: 0 0 0 52px;
+    width: 186px;
+    height: 40px;
+    background: url(images/againButton.jpg) no-repeat 0 0;
+    cursor: pointer;
+}
+
+#againButton:hover {
+    background-position: 0 -40px;
+}

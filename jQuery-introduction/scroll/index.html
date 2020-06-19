@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スムーススクロール</title>
+  <script type="text/javascript" src="./jquery-1.12.4.min.js"></script>
+  <script type="text/javascript">
+  //'a[href^="#"]'エラーになるため注意
+    $(function(){
+      $('a[href^="#"]').click(function(){
+        var myHref = $(this).attr("href");
+        var myPos = $(myHref).offset().top;
+        $("html,body").animate({scrollTop : myPos}, 1000);
+        return false;
+      });
+    });
+    </script>
+  <style>
+    div  {
+      color: #fff;
+      width: 500px;
+      height: 500px;
+      background-color: #09c;
+      margin: 100px 0;
+    }
+  </style>
+</head>
+<body>
+  <a id="myTop">ページの始まり</a><br>
+  <a href="http://www.google.co.jp/">google</a><br />
+  <a href="#content_1">content_1</a><br>
+  <a href="#content_2">content_2</a><br>
+  <a href="#content_3">content_3</a><br>
+  <a href="#content_4">content_4</a><br>
+  <a href="#content_5">content_5</a><br>
+  <div id="content_1">content 1<br><a href="#myTop">トップへ戻る</a></div>
+  <div id="content_2">content 2<br><a href="#myTop">トップへ戻る</a></div>
+  <div id="content_3">content 3<br><a href="#myTop">トップへ戻る</a></div>
+  <div id="content_4">content 4<br><a href="#myTop">トップへ戻る</a></div>
+  <div id="content_5">content 5<br><a href="#myTop">トップへ戻る</a></div>
+</body>
+</html>

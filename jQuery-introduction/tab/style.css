@@ -1,0 +1,68 @@
+body {
+    line-height: 1.0;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    margin: 10px;
+}
+
+ul li {
+    float: left;
+    padding: 5px 15px;
+    border-top: 1px solid #ddd;
+    border-left: 1px #ddd solid;
+    border-right: 1px solid #ddd;
+
+    color: #999;
+    height: 20px;
+    line-height: 15px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+ul li.selsected {
+    color: #000;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 0 0 5px;
+    cursor: pointer;
+}
+
+#textArea {
+    position: relative;
+    top: -1px;
+    z-index: -1;
+
+    clear: left;
+    height: 100px;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+    border: 1px #ddd solid;
+    background: #ffd;
+}
+
+.yellow {
+    background-color: #ffd;
+}
+
+.pink {
+    background-color: #fdf;
+}
+
+.blue {
+    background-color: #dff;
+}
+
+ul li.yellow.selected {
+    background-color: #ffd;
+}
+
+ul li.pink.selected {
+    background-color: #fdf;
+}
+
+ul li.blue.selected {
+    background-color: #dff;
+}
