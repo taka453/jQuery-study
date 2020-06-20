@@ -53,3 +53,7 @@ body {
 .result {
     font-size: 30px;
 }
+
+.resultPanel {
+    padding: 10px 0;
+}
