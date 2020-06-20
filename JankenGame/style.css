@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background: #99FFCC;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.content {
+    width: 600px;
+    margin: 100px auto 0;
+    text-align: center;
+    background: #FFFFCC;
+}
+
+.content h1 {
+    padding: 20px 0;
+    font-size: 40px;
+    margin: 0;
+}
+
+.content p {
+    margin: 20px 0;
+}
+
+.playerPanel img {
+    width: 100px;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.comPanel {
+    width: 200px;
+    margin: 20px auto;
+    background: #CCFFFF;
+    border-radius: 5px;
+}
+
+.comPanel img {
+    width: 100px;
+}
+
+.selected {
+    background: #ff0000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.result {
+    font-size: 30px;
+}
