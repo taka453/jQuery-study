@@ -1,0 +1,11 @@
+#switch {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-image: url(switch.gif);
+}
+
+/* 背景位置を下揃いに変更 */
+.active {
+    background-position: bottom;
+}
