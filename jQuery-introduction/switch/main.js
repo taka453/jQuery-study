@@ -1,13 +1,21 @@
+function onFunc() {
+    $('#check').text('ONの処理を実行するよ!');
+}
+
+function offFunc() {
+    $('#check').text('OFFの処理を実行するよ!');
+}
+
 $(function(){
     $('#switch').click(function(){
-        //thisはイベントが発生した要素を指す。
+        //引数で設定したclass属性(active)がない場合はclass属性(active)を追加。
+        //thisを利用するイベントが発生した要素を操作
         $(this).toggleClass('active');
-    });
-
-    $('button').click(function(){
-        //引数に指定したクラスが有るかどうか調査
-        const flg = $('#switch').hasClass('active');
-        alert(flg);
+        const flg = $(this).hasClass('active');
+        if(flg === true) {
+            onFunc();
+        } else {
+            offFunc();
+        }
     });
 });
-

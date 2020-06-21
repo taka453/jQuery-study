@@ -1,0 +1,23 @@
+.clickArea {
+    width: 260px;
+    padding: 5px;
+    color: #fff;
+    background: #09C;
+    margin-top: 30px;
+}
+
+.clickArea p{
+    margin: 0;
+}
+
+.display {
+    font-size: 12px;
+}
+
+.answer {
+    width: 240px;
+    padding: 5px;
+    margin: 5px;
+    background: #d99;
+}
+
