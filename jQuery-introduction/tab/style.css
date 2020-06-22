@@ -10,6 +10,72 @@ ul {
 
 ul li {
     float: left;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 15px 5px 15px;
+    margin: 5px 0 0 5px;
+    color: #999;
+
+    border-top: 1px #ddd solid;
+    border-left: 1px #ddd solid;
+    border-right: 1px #ddd solid;
+}
+
+ul li.selected {
+    color: #000;
+    line-height: 20px;
+    height: 20px;
+}
+
+#textArea {
+    position: relative;
+    top: -1px;
+    z-index: -1;
+    clear: left;
+    background-color: #ffd;
+    height: 100px;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+    border: 1px#ddd solid;
+}
+
+.yellow {
+    background-color: #ffd;
+}
+
+.pink{
+    background-color: #fdf
+}
+
+.blue {
+    background-color: #dff;
+}
+
+ul li.yellow.selected {
+    border-bottom: 1px #ffd solid;
+}
+
+ul li.pink.selected {
+    border-bottom: 1px #fdf solid;
+}
+
+ul li.blue.selected {
+    border-bottom: 1px #dff solid;
+}
+
+
+/* body {
+    line-height: 1.0;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    margin: 10px;
+}
+
+ul li {
+    float: left;
     padding: 5px 15px;
     border-top: 1px solid #ddd;
     border-left: 1px #ddd solid;
@@ -65,4 +131,4 @@ ul li.pink.selected {
 
 ul li.blue.selected {
     background-color: #dff;
-}
+} */
